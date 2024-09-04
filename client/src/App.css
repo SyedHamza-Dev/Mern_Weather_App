@@ -1,0 +1,160 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #B3C6F4, #0C2D7F), url('https://img.freepik.com/free-photo/blue-sky-with-cloud-closeup_150588-124.jpg?t=st=1710145731~exp=1710149331~hmac=312231e34af28df68a64a9b006a4a627d0f623f0ba6e19eb23e5aceae935e41e&w=360');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.header h1 {
+    color: #FFD54F;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#input, #search {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+#input {
+    background: #FAFAFA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    background: #4A90E2;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+    text-align: center;
+    color: #FFF;
+    margin-top: 2rem;
+}
+
+#city {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1rem 0;
+}
+
+#temperature {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.temp-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#clouds {
+    font-size: 1.25rem;
+    background: rgba(100, 150, 255, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.next p,
+.next h3 {
+    margin: 0.5rem 0;
+}
+
+.forecstD {
+    margin: 2rem auto;
+    color: #FFF;
+}
+
+.weekF {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cast-header {
+    color: #FFF;
+    background: rgba(255, 189, 132, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.divider1,
+.divider2 {
+    background: rgba(255, 189, 132, 0.5);
+    border-radius: 5px;
+}
+
+.divider1 {
+    height: 150px;
+    width: 100%;
+}
+
+.divider2 {
+    height: 4px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.time,
+.date {
+    color: #FFBF00;
+}
+
+.desc {
+    color: #C4FF4D;
+}
